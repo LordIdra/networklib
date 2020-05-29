@@ -40,13 +40,17 @@ n = DeepNeuralNetwork([1, 1, 1], 'leakyRELU')
 #Training
 for x in range(20000):
 	index = randint(0, len(training_in)-1)
-	n.forward_feed([training_in[index]])
-	n.back_propagate([training_out[index]], 0.000001)
+	n.set_inputs([training_in[index]])
+	n.set_targets([training_out[index]])
+	n.forward_feed()
+	n.back_propagate(0.000001)
 
 #Testing
 for i in range(25):
-	n.forward_feed([testing_in[i]])
-	n.back_propagate([testing_out[i]], 0.000001)
+	n.set_inputs([training_in[i]])
+	n.set_targets([training_out[i]])
+	n.forward_feed()
+	n.back_propagate(0.000001)
 	costs.append(n.cost_normal(0))
 
 #Print final cost
