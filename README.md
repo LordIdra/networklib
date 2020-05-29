@@ -12,3 +12,9 @@ I will write this section once I have more of the library built.
 + Added 1-1-1 multiplication example for checking the main algorithm is working
 + Added 4 basic activation functions: sigmoid, tanh, linearRELU and leakyRELU
 + Added benchmark for activation functions
+
+`0.0.2`
++ Added very basic handler for .txt datasets
++ Added 4 bit and gate dataset
++ Added simple 4 bit and gate DNN demonstration (needs improvement)
++ Changed DNN file to use 'set_inputs' and 'set_targets' independently
