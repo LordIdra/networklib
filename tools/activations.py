@@ -6,7 +6,7 @@ from functions import timer
 #ADVANTAGES: smooth gradient, _normalises values, clear prediction ability
 #DISADVANTAGES: prone to vanishing gradient problem, computationally expensive
 def sigmoid_normal(x):
-	return (exp(x)/(exp(x)+1))
+	return (exp(x)/(round(exp(x)+1, 10)))
 
 def sigmoid_derivative(x):
 	return sigmoid_normal(x) * (1-sigmoid_normal(x))

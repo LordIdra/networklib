@@ -70,11 +70,15 @@ class DeepNeuralNetwork:
 		#Returns the _derivative (slope) of the cost for backpropagation
 		return (self.nodes[-1][index]-self.targets[index])*2
 
-
-	def forward_feed(self, inputs):
+	def set_inputs(self, inputs):
 		#Set input nodes to the input data provided
 		self.nodes[0] = inputs
 
+	def set_targets(self, targets):
+		#Set target for backpropagation
+		self.targets = targets
+
+	def forward_feed(self):
 		#Run a try-except so the whole program doesn't stop if there's a piece of missing data
 		try:
 
@@ -100,10 +104,7 @@ class DeepNeuralNetwork:
 			return 'ERROR: data missing or corrupted'
 
 
-	def back_propagate(self, targets, learning_rate):
-		#Set target for backpropagation
-		self.targets = targets
-
+	def back_propagate(self, learning_rate):
 		#Create gradient list and insert initial gradient at output nodes to work from
 		slope = [[self.cost_slope(x) for x in range(len(self.nodes[-1]))]]
 		layer_length = len(self.nodes) #Cached to speed up process time
