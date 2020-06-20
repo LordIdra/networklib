@@ -18,3 +18,8 @@ I will write this section once I have more of the library built.
 + Added 4 bit and gate dataset
 + Added simple 4 bit and gate DNN demonstration (needs improvement)
 + Changed DNN file to use 'set_inputs' and 'set_targets' independently
+
+`0.0.3`
++ Added handwriting demonstration file (note you will need to download the dataset independently as it is 107 megabytes
+  (Note that I wasn't able to achieve above 75% accuracy with this, probably due to my computer being too slow. It serves
+  more as a test to see if the main algorithm is working properly)
