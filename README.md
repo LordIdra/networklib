@@ -23,3 +23,8 @@ I will write this section once I have more of the library built.
 + Added handwriting demonstration file (note you will need to download the dataset independently as it is 107 megabytes
   (Note that I wasn't able to achieve above 75% accuracy with this, probably due to my computer being too slow. It serves
   more as a test to see if the main algorithm is working properly)
+
+`0.0.4`
++ Removed the previous handwriting demonstration file
++ Added an interface designed specifically for classifiers
++ Added a new handwriting recognition program using the interface with pretrained weights file that can be loaded for 80% accuracy.
