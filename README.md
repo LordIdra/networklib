@@ -1,5 +1,5 @@
 # NetworkLib
-This is a WIP/in-development library for training basic neural networks, including dataset handling and importing from .txt files. As of writing this, the library can run a basic fully-connected deep neural network simulation with the ability to procedurally add layers and set custom network structure. The algorithm used is backpropagation, however matrices are not used (I plan to eventually add support for this). I will add more information here as the library grows, but for now this serves as a good place to log changes and save code.
+This is a WIP/in-development library for training basic neural networks, including dataset handling and importing from .txt files. As of writing this, the library can run a basic fully-connected deep neural network simulation with the ability to procedurally add layers and set custom network structure. The algorithm used is backpropagation, however matrices are not used (I plan to eventually add support for this). I will add more information here as the library grows, but for now this serves as a good place to log changes and save code. Note that this is more of a showcase than anything - let's be honest, no one's going to actually use this to run/train any neural networks.
 
 # HOW TO USE/API
 I will write this section once I have more of the library built. 
