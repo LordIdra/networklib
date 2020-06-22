@@ -1,0 +1,8 @@
+To run dnn_panel_handwriting.py:
+1) download the training and test set from https://pjreddie.com/projects/mnist-in-csv/
+2) drop the training and tests sets into NetworkLib/Datasets
+3) run dnn_panel_handwriting.py using CPython, pypy or another interpreter compatible with tkinter
+4) use the save/load function on the control panel that appears once the program finishes importing the datasets to load
+   (without quotes or .txt) 'handwriting_3'. This will load a pretrained set of weights into the algorithm which can achieve around 
+   80% accuracy (yes, awful, I know, but it's the best I could do with my computer and the program's efficiency). Alternatively
+   of course you can train it yourself.
