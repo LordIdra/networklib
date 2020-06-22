@@ -1,2 +1,1 @@
-To run the MNIST example, download the training set from https://pjreddie.com/projects/mnist-in-csv/
-Then copy it into the datasets folder and the handwriting_example.py file should run.
+
